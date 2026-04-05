@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="/static/homeStyle.css">
+    </head>
 <body>
-    <p>index</p>
+    <div class="container">
+        <!-- Header -->
+        <div class="header-area">
+            <h1>The Reading Room</h1>
+            <p class="subtitle">Please read the excerpt carefully</p>
+        </div>
+
+        <!-- Excerpt Card -->
+        <div class="excerpt-card">
+            <div class="excerpt-information">
+                <h2 class="excerpt-title">{{ excerpt.excerpt_title }}</h2>
+                <p class="excerpt-author">by {{ excerpt.excerpt_author }}</p>
+            </div>
+
+            <div class="excerpt-text">
+                {% for paragraph in content %}
+                    <p>{{ paragraph }}</p>
+                {% endfor %}
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer">
+            <form method="post" action="{{ url_for('home') }}">
+                <button class="continue-btn">Continue</button>
+            </form>
+        </div>
+
+    </div>
+
 </body>
 </html>

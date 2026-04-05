@@ -1,0 +1,86 @@
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f6f3;
+    font-family: "Georgia", serif;
+    color: #2e2e2e;
+}
+
+/* Layout */
+.container {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+/* Header */
+.header-area {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header-area h1 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Excerpt Card */
+.excerpt-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Metadata */
+.excerpt-information {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.excerpt-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.excerpt-author {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Text */
+.excerpt-text p {
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Button */
+.continue-btn {
+    background-color: #2e2e2e;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.continue-btn:hover {
+    background-color: #444;
+    transform: translateY(-1px);
+}
