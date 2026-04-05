@@ -1,0 +1,122 @@
+[
+  {
+    "excerpt_title": "Midnight Study Session",
+    "excerpt_author": "Study Authors",
+    "excerpt_number": 1,
+    "condition": "relatable",
+    "excerpt_json": [
+      "The library lights were too bright for how late it was, but she stayed anyway. Her notes were scattered, her thoughts even more so.",
+      "Everyone else looked focused, like they had a plan. She wasn’t sure she even understood the question.",
+      "Still, she kept typing. Even if it was messy. Even if it wasn’t perfect.",
+      "Because stopping felt worse than trying."
+    ]
+  },
+  {
+    "excerpt_title": "Quiet Platform",
+    "excerpt_author": "Study Authors",
+    "excerpt_number": 2,
+    "condition": "neutral",
+    "excerpt_json": [
+      "The train platform stretched out beneath the dim overhead lights. A few people stood apart, each waiting in their own space.",
+      "The sound of distant tracks echoed faintly, growing louder with time.",
+      "A breeze moved through the station, shifting coats and loose papers.",
+      "Then the train arrived, and everything moved forward again."
+    ]
+  },
+  {
+    "excerpt_title": "Office Hours Door",
+    "excerpt_author": "Study Authors",
+    "excerpt_number": 3,
+    "condition": "relatable",
+    "excerpt_json": [
+      "She stared at the door longer than she meant to. Inside, someone was already asking questions—confident, clear, everything she wasn’t.",
+      "What if hers didn’t make sense? What if she was the only one struggling?",
+      "But she remembered how lost she felt yesterday. And how much even a small answer helped.",
+      "So she knocked, even if her voice shook."
+    ]
+  },
+  {
+    "excerpt_title": "Afternoon Café",
+    "excerpt_author": "Study Authors",
+    "excerpt_number": 4,
+    "condition": "neutral",
+    "excerpt_json": [
+      "The café was filled with quiet conversation and the soft clink of cups.",
+      "People came and went, each lingering just long enough before moving on.",
+      "Sunlight filtered through the windows, shifting slowly across the tables.",
+      "Time passed without urgency."
+    ]
+  },
+  {
+    "excerpt_title": "Group Project",
+    "excerpt_author": "Study Authors",
+    "excerpt_number": 5,
+    "condition": "relatable",
+    "excerpt_json": [
+      "They all seemed to understand the assignment immediately. She nodded along, hoping no one would notice the gap between them and her.",
+      "When it was her turn to speak, she hesitated just a second too long.",
+      "But then she tried anyway—piecing together what she could.",
+      "And someone nodded back, like it made sense."
+    ]
+  },
+  {
+    "excerpt_title": "Evening Walk",
+    "excerpt_author": "Study Authors",
+    "excerpt_number": 6,
+    "condition": "neutral",
+    "excerpt_json": [
+      "The path curved through the quiet park, lined with trees that barely moved in the still air.",
+      "A few people passed by, their footsteps soft against the pavement.",
+      "The sky shifted slowly toward dusk, colors fading into gray.",
+      "Everything felt steady, unchanged."
+    ]
+  },
+  {
+    "excerpt_title": "After the Exam",
+    "excerpt_author": "Study Authors",
+    "excerpt_number": 7,
+    "condition": "relatable",
+    "excerpt_json": [
+      "She walked out of the exam room replaying every answer in her head.",
+      "Everyone else seemed relieved, already talking about what they got right.",
+      "She wasn’t sure she got anything right.",
+      "But she had shown up. She had tried. And maybe that counted for something."
+    ]
+  },
+  {
+    "excerpt_title": "Library Shelf",
+    "excerpt_author": "Study Authors",
+    "excerpt_number": 8,
+    "condition": "neutral",
+    "excerpt_json": [
+      "The shelves were lined with books, each one carefully arranged in its place.",
+      "Dust floated in the air, visible only when the light hit it just right.",
+      "A student passed by, scanning titles without stopping.",
+      "The room remained quiet and unchanged."
+    ]
+  },
+  {
+    "excerpt_title": "First Day of Class",
+    "excerpt_author": "Study Authors",
+    "excerpt_number": 9,
+    "condition": "relatable",
+    "excerpt_json": [
+      "She chose a seat near the middle—close enough to see, far enough to disappear.",
+      "People around her chatted easily, already forming connections.",
+      "She wondered if she should say something, or if it was already too late.",
+      "But when someone turned and smiled, it felt like maybe it wasn’t."
+    ]
+  },
+  {
+    "excerpt_title": "Rainy Window",
+    "excerpt_author": "Study Authors",
+    "excerpt_number": 10,
+    "condition": "neutral",
+    "excerpt_json": [
+      "Rain tapped steadily against the window, forming small trails down the glass.",
+      "The room inside remained quiet, insulated from the sound.",
+      "Outside, the world moved more slowly, blurred by the falling rain.",
+      "Nothing demanded attention."
+    ]
+  }
+]
