@@ -1,0 +1,11 @@
+.DS_Store
+studyapp/.DS_Store
+.venv/
+*.pyc
+__pycache__/
+studyapp/__pycache__/
+instance/*
+*.db
+*.code-workspace
+tmp/.DS_Store
+tmp/
