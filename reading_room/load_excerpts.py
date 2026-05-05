@@ -1,6 +1,6 @@
 import json
-from models import Excerpt, db
-from app import app
+from reading_room.models import Excerpt, db
+from reading_room.app import app
 
 def load_excerpts():
     with open("excerpts/gpt_excerpts.json") as f:

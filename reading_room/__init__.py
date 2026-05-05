@@ -20,19 +20,19 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    from . import db
+    from .reading_room import db
     db.init_app(app)
 
-    from . import auth
+    from .reading_room import auth
     app.register_blueprint(auth.bp)
 
-    from . import blog
+    from .reading_room import blog
     app.register_blueprint(blog.bp)
 
-    from . import survey
+    from .reading_room import survey
     app.register_blueprint(survey.bp)
 
-    from . import dashboard
+    from .reading_room import dashboard
     app.register_blueprint(dashboard.bp)
 
     return app

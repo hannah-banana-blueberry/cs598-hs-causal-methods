@@ -1,0 +1,4 @@
+Deployment:
+	tasks:
+ 	- export DEPLOYPATH=/home/studyskills/repositories
+	- /bin/cp -R study-skills $DEPLOYPATH
