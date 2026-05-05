@@ -2,9 +2,9 @@ from flask import (
     Blueprint, flash, g, redirect, render_template, request, url_for
 )
 
-from typing_speed.auth import login_required
-from typing_speed.db import get_db
-from typing_speed.excerpts import get_excerpt
+from reading_room.auth import login_required
+from reading_room.db import get_db
+from reading_room.excerpts import get_excerpt
 
 bp = Blueprint('survey', __name__, url_prefix='/survey')
 

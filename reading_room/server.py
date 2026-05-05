@@ -1,4 +1,4 @@
-from typing_speed import create_app
+from reading_room import create_app
 app = create_app()
 
 if __name__ == '__main__':

@@ -2,7 +2,7 @@ from flask import (
     Blueprint, render_template
 )
 
-from typing_speed.db import get_db
+from reading_room.db import get_db
 
 bp = Blueprint('dashboard', __name__, url_prefix='/dashboard')
 

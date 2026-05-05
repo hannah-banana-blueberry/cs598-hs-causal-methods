@@ -4,7 +4,7 @@ from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
 )
 
-from typing_speed.db import get_db
+from reading_room.db import get_db
 
 bp = Blueprint('auth', __name__, url_prefix='/register')
 

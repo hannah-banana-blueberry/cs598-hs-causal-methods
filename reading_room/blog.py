@@ -2,8 +2,8 @@ from flask import (
     Blueprint, g, redirect, url_for
 )
 
-from typing_speed.auth import login_required
-from typing_speed.db import get_db
+from reading_room.auth import login_required
+from reading_room.db import get_db
 
 bp = Blueprint('blog', __name__)
 
