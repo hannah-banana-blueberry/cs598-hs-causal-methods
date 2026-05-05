@@ -1,3 +1,3 @@
-from typing_speed import create_app
+from reading_room import create_app
 
 application = create_app()

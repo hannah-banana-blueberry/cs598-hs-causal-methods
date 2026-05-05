@@ -1,7 +1,7 @@
 [project]
-name = "studyapp"
+name = "reading-room"
 version = "1.0.0"
-description = "study skills website for proof problems."
+description = "Reading Room Flask survey app."
 dependencies = [
     "flask",
 ]
