@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h3 id="greeting">Dashboard</h3>
+<ul>
+    <li>Registered users: {{counts['registered_user_count']}}</li>
+    <li>Completed users: {{counts['completed_user_count']}}</li>
+    <li>Prolific users: {{counts['prolific_registered_user_count']}}</li>
+    <li>Completed Prolific users: {{counts['prolific_completed_user_count']}}</li>
+</ul>
+  
+</form>
+<script>
+
+</script>
+{% endblock %}

@@ -1,0 +1,306 @@
+html { font-family: sans-serif; background: #f5f0eb; padding: 1rem; }
+body { max-width: 960px; margin: 0 auto; background: white; box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px; border-radius: 10px; font-family: 'Jost';}
+h1 { font-family: 'Jost'; color: #000000; margin: 1rem 0; }
+a { color: #000000; }
+hr { border: none; border-top: 1px solid lightgray; }
+nav { background: white; display: flex; align-items: center; padding: 0 0.5rem; border-radius: 10px;}
+nav h1 { flex: auto; margin: 0; color: black; font-family: 'Jost', sans-serif; font-weight:300; font-style: italic; font-size:30px;}
+nav h1 a { text-decoration: none; padding: 0.25rem 0.5rem; }
+nav ul  { display: flex; list-style: none; margin: 0; padding: 0; }
+nav ul li a, nav ul li span, header .action { display: block; padding: 0.5rem; font-family: 'Jost', sans-serif; font-weight:400; color: black}
+.content { padding: 0 1rem 1rem; }
+.content > header { border-bottom: 1px solid lightgray; display: flex; align-items: flex-end; }
+.content > header h1 { flex: auto; margin: 1rem 0 0.25rem 0; }
+.flash { margin: 1em 0; padding: 1em; background: #cae6f6; border: 1px solid #377ba8; }
+.content form { margin: 1em 0; display: flex; flex-direction: column; }
+.content label { font-weight: bold; margin-bottom: 0.5em; }
+.content input, .content textarea { margin-bottom: 1em; }
+.content textarea { min-height: 12em; resize: vertical; }
+input[type=submit] { align-self: start; min-width: 10em; }
+
+/* The Reading Room - Study Layout */
+.study-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.study-banner {
+  background: #2c3e50;
+  height: 12px;
+  border-radius: 10px 10px 0 0;
+  margin: -1rem -1rem 0 -1rem;
+}
+
+.study-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2em;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.8em 0 0.6em 0;
+  color: #2c3e50;
+}
+
+.task-bar {
+  background: #f0e6d8;
+  border: 1px solid #d4c4b0;
+  border-radius: 6px;
+  padding: 0.8em 1.2em;
+  margin-bottom: 1.5em;
+  display: flex;
+  gap: 2em;
+  align-items: baseline;
+}
+
+.task-label {
+  white-space: nowrap;
+}
+
+.task-instructions {
+  flex: 1;
+}
+
+.survey-card {
+  background: #faf5f0;
+  border: 1px solid #e0d5c8;
+  border-radius: 8px;
+  padding: 1.2em 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #e0d5c8;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.8em;
+}
+
+.section-header h3 {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.2em;
+  color: #2c3e50;
+}
+
+.scale-legend {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.question-row {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #eee;
+}
+
+.question-row:last-child {
+  border-bottom: none;
+}
+
+.question-row p {
+  margin: 0 0 0.4em 0;
+  font-size: 1em;
+}
+
+.likert-row {
+  display: flex;
+  gap: 1.5em;
+  padding-left: 0.5em;
+}
+
+.likert-row label {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.excerpt-card {
+  background: #faf5f0;
+  border: 1px solid #e0d5c8;
+  border-radius: 8px;
+  padding: 1.5em 2em;
+  margin-bottom: 1.5em;
+}
+
+.excerpt-header {
+  border-bottom: 1px solid #e0d5c8;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+.excerpt-header p {
+  margin: 0.2em 0;
+  font-size: 1.1em;
+}
+
+.excerpt-text {
+  font-family: 'Jost', sans-serif;
+  font-size: 1em;
+  line-height: 1.7;
+  white-space: pre-line;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 0.5em;
+}
+
+.button-center {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.study-button {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 36px;
+  font-family: 'Jost', sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 8px;
+  transition: background 0.2s;
+}
+
+.study-button:hover {
+  background: #1a2a38;
+}
+
+/* Old likert tables (kept for demographics) */
+.likert td {
+  text-align: center;
+  width: 10%;
+}
+
+.likert th {
+  text-align: center;
+  width: 10%;
+}
+
+.likert th label {
+  font-family: 'Jost', sans-serif; font-weight:400;
+  display: block;
+  min-height: 100%;
+  height: auto !important;
+}
+
+.likert td label {
+  display: block;
+  min-height: 100%;
+  height: auto !important;
+}
+
+table.likert {
+  width: 65%;
+  border-collapse: collapse;
+}
+
+hr.dotted {
+  border: none;
+  border-top: none;
+  height: 0px;
+  width: 40%;
+}
+
+hr.invisible {
+  border: none;
+  border-top: none;
+  height: 0px;
+  width: 40%;
+}
+
+#consent_form {
+  background: #eee;
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  font-family: serif;
+  -webkit-overflow-scrolling: auto;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  height: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px !important;
+  height: 3px;
+  background: #41617D !important;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5) !important;
+}
+
+input[type=radio] {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+input[type=checkbox] {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+p.question {
+  font-size: 1.2em;
+  margin-bottom: 0em;
+}
+
+.rounded-google-button {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  z-index: 0;
+}
+
+.rounded-google-button:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+@media screen and (max-width: 580px) {
+  .task-bar {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .likert-row {
+    gap: 0.8em;
+  }
+  ol {
+    padding-left: 0.5rem;
+  }
+  table.likert {
+    width: 100%;
+  }
+  .likert td {
+    width: auto;
+  }
+}

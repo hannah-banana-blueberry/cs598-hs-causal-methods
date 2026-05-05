@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="study-container">
+  <div class="study-banner"></div>
+  <h1 class="study-title">The Reading Room</h1>
+
+  <div class="task-bar">
+    <span class="task-label"><b>Task:</b> Read Excerpt</span>
+    <span class="task-instructions"><b>Instructions:</b> Please read the excerpt carefully.</span>
+  </div>
+
+  <div class="excerpt-card">
+    <div class="excerpt-header">
+      <p><b>Title: {{ excerpt.title }}</b></p>
+      <p><b>Author: {{ excerpt.author }}</b></p>
+    </div>
+    <div class="excerpt-text">
+      {{ excerpt.text }}
+    </div>
+  </div>
+
+  <form method="post">
+    <div class="button-center">
+      <input class="study-button" type="submit" value="Continue">
+    </div>
+  </form>
+</div>
+{% endblock %}

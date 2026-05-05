@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="study-container">
+  <div class="study-banner"></div>
+  <h1 class="study-title">The Reading Room</h1>
+
+  <div class="task-bar">
+    <span class="task-label"><b>Task:</b> Demographics</span>
+    <span class="task-instructions"><b>Instructions:</b> Complete the questionnaire to finish the study.</span>
+  </div>
+
+  <div class="survey-card">
+    <form id="survey" name="survey" method="post">
+      <ol>
+
+      <li><p class="question">How often do you read for pleasure:</p>
+        <table class="likert">
+          <tr>
+            <th><label for="never-r">Never</label></th>
+            <th><label for="sparingly-r">Sparingly</label></th>
+            <th><label for="sometimes-r">Sometimes</label></th>
+            <th><label for="often-r">Often</label></th>
+            <th><label for="always-r">Always</label></th>
+          </tr>
+          <tr>
+            <td><label for="never-r"><input type="radio" id="never-r" name="q2" value="never" required /></label></td>
+            <td><label for="sparingly-r"><input type="radio" id="sparingly-r" name="q2" value="sparingly" /></label></td>
+            <td><label for="sometimes-r"><input type="radio" id="sometimes-r" name="q2" value="sometimes" /></label></td>
+            <td><label for="often-r"><input type="radio" id="often-r" name="q2" value="often" /></label></td>
+            <td><label for="always-r"><input type="radio" id="always-r" name="q2" value="always" /></label></td>
+          </tr>
+          <tr>
+            <td colspan="5">
+              (optional) Please explain your answer here:
+              <input type="text" name="q2text">
+            </td>
+          </tr>
+        </table>
+      </li>
+      <hr class="dotted">
+
+      <li><p class="question">How often do you read romance books:</p>
+        <table class="likert">
+          <tr>
+            <th><label for="never-l">Never</label></th>
+            <th><label for="sparingly-l">Sparingly</label></th>
+            <th><label for="sometimes-l">Sometimes</label></th>
+            <th><label for="often-l">Often</label></th>
+            <th><label for="always-l">Always</label></th>
+          </tr>
+          <tr>
+            <td><label for="never-l"><input type="radio" id="never-l" name="q3" value="never" required /></label></td>
+            <td><label for="sparingly-l"><input type="radio" id="sparingly-l" name="q3" value="sparingly" /></label></td>
+            <td><label for="sometimes-l"><input type="radio" id="sometimes-l" name="q3" value="sometimes" /></label></td>
+            <td><label for="often-l"><input type="radio" id="often-l" name="q3" value="often" /></label></td>
+            <td><label for="always-l"><input type="radio" id="always-l" name="q3" value="always" /></label></td>
+          </tr>
+          <tr>
+            <td colspan="5">
+              (optional) Please explain your answer here:
+              <input type="text" name="q3text">
+            </td>
+          </tr>
+        </table>
+      </li>
+      <hr class="dotted">
+
+      <li><p class="question">Are you currently a student?</p>
+        <table class="likert">
+          <tr>
+            <th><label for="no-student">No</label></th>
+            <th><label for="yes-student">Yes</label></th>
+          </tr>
+          <tr>
+            <td><label for="no-student"><input type="radio" id="no-student" name="q4" value="no" required /></label></td>
+            <td><label for="yes-student"><input type="radio" id="yes-student" name="q4" value="yes" /></label></td>
+          </tr>
+          <tr>
+            <td colspan="5">
+              (optional) Please explain your answer here:
+              <input type="text" name="q4text">
+            </td>
+          </tr>
+        </table>
+      </li>
+      <hr class="dotted">
+
+      <li><p class="question">Input your age:</p>
+        <select name="q5" required>
+          <option value="" selected>-- select an option --</option>
+          {% for age in range(18, 100) %}
+          <option value="{{ age }}">{{ age }}</option>
+          {% endfor %}
+          <option value="na">Prefer not to say</option>
+        </select>
+      </li>
+      <hr class="dotted">
+
+      <li><p class="question">Describe your gender:</p>
+        <table class="likert">
+          <tr>
+            <th><label for="man">Man</label></th>
+            <th><label for="woman">Woman</label></th>
+            <th><label for="self-describe">Prefer to self-describe</label></th>
+            <th><label for="not-disclose">Prefer not to say</label></th>
+          </tr>
+          <tr>
+            <td><label for="man"><input type="radio" id="man" name="q6" value="man" required /></label></td>
+            <td><label for="woman"><input type="radio" id="woman" name="q6" value="woman" /></label></td>
+            <td><label for="self-describe"><input type="radio" id="self-describe" name="q6" value="self-describe" /></label></td>
+            <td><label for="not-disclose"><input type="radio" id="not-disclose" name="q6" value="not-disclose" /></label></td>
+          </tr>
+          <tr>
+            <td colspan="5">
+              If you answered "Prefer to self-describe," you may add additional details here:
+              <input type="text" name="q6text">
+            </td>
+          </tr>
+        </table>
+      </li>
+      <hr class="dotted">
+
+      <li><p class="question">What is the highest degree you have earned?</p>
+        <select name="q7" id="degree" required>
+          <option hidden disabled selected value="">-- select an option --</option>
+          <option value="none">Less than high school diploma</option>
+          <option value="GED">High school diploma or GED</option>
+          <option value="some college">Some college, but no degree</option>
+          <option value="associate">Associate's degree (e.g. AA, AS)</option>
+          <option value="bachelor">Bachelor's degree (e.g. BA, BS)</option>
+          <option value="master">Master's degree (e.g. MA, MS, MEng, MFA)</option>
+          <option value="professional">Professional degree (e.g. MD, DDS, JD)</option>
+          <option value="doctorate">Doctorate (e.g. PhD, EdD)</option>
+          <option value="not-disclose">Prefer not to say</option>
+        </select>
+      </li>
+      <hr class="dotted">
+
+      <li><p class="question">Describe your race:</p>
+        <select name="q8" id="race" required>
+          <option hidden disabled selected value="">-- select an option --</option>
+          <option value="american-indian">American Indian or Alaska Native</option>
+          <option value="asian">Asian</option>
+          <option value="black">Black or African American</option>
+          <option value="pacific-islander">Native Hawaiian or Other Pacific Islander</option>
+          <option value="white">White</option>
+          <option value="multiracial">Multiracial</option>
+          <option value="not-disclose">Prefer not to say</option>
+        </select>
+      </li>
+      <hr class="dotted">
+
+      <li id="drawing"><p class="question">To participate in the drawing (a $15 gift card), please enter your email here:</p>
+        <input type="text" name="email">
+      </li>
+
+      </ol>
+      <hr class="dotted">
+      <div class="button-center">
+        <input class="study-button" type="submit" value="Finish">
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  if ("{{ prolific }}" == "true") {
+    document.getElementById("drawing").style.display = "none";
+  }
+  if (window.innerWidth < 580) {
+    var elements = document.querySelectorAll('.likert td');
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.width = "auto";
+    }
+    var elements = document.querySelectorAll('table.likert');
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.width = "auto";
+    }
+  }
+</script>
+{% endblock %}

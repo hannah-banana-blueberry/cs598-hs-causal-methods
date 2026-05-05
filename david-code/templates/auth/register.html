@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Thanks for your interest!{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<body style="max-width: 480px" class="register">
+
+Before beginning the study, read the consent form below.
+<hr class="invisible">
+
+<div id="consent_form" style="padding: 10px; box-sizing: border-box;">
+  You are being asked to participate in a voluntary research study. The purpose of this study is to investigate the effects of reading romance books on readers' sense of belonging and self-efficacy. Participating in this study will involve reading a short book excerpt and answering questions about your experiences. Your participation will last for approximately 10 minutes. Risks related to this research include potential discomfort or inconvenience in sharing personal experiences. No physical or psychological harm is expected. You have the right to withdraw from the study at any time without penalty. Benefits to this research include the opportunity to contribute to understanding how literature affects readers. The alternative to participating in this study is to decline participation at any time you feel uncomfortable, and there will be no penalty. To participate, you must currently be located in the United States.
+  <br>
+  <br>
+  <b>Principal Investigator Name and Title:</b> Sarah Sterman, Research Assistant Professor
+  <br>
+  <b>Department and Institution:</b> Computer Science, University of Illinois Urbana-Champaign
+  <br>
+  <b>Contact Information:</b> ssterman@illinois.edu, 4220 Siebel Center
+  <br>
+  <br>
+
+  <b>Why am I being asked?</b>
+  <br>
+  You are being asked to be a participant in a research study about reading and its effects on readers. The purpose of this research is to investigate how reading romance books affects readers' sense of belonging and self-efficacy. You have been asked to participate because you are a reader or potential reader. Up to 1,000 participants will be involved in this study.
+  <br>
+  Your participation in this research is voluntary. Your decision whether or not to participate will not affect your current or future dealings with the University of Illinois Urbana-Champaign. If you decide to participate, you are free to withdraw at any time without affecting that relationship.
+  <br>
+  <br>
+
+  <b>What procedures are involved?</b>
+  <br>
+  The study procedures are designed to collect information on your experiences reading a short book excerpt. These procedures include responding to surveys before and after reading. Any data collected will be used for research purposes only.
+  <br>
+  The study will involve answering questions before reading an excerpt, reading the excerpt, then answering questions afterward. All collected data will be stored in a computer that is only accessible to the researchers of this study. The data may be used for future research publications, but all participants will be anonymized.
+  <br>
+  <br>
+
+  <b>What are the potential risks and discomforts?</b>
+  <ol>
+    <li>Privacy and confidentiality concerns: Participants may be concerned about the privacy and confidentiality of their personal information, especially if they are asked to share personal experiences or opinions.</li>
+  </ol>
+
+  <b>Are there benefits to participating in the research?</b>
+  <ol>
+    <li>Contributing to the understanding of how literature affects readers.</li>
+    <li>Gaining a better understanding of your own reading experiences.</li>
+  </ol>
+  <br>
+
+  <b>What other options are there?</b>
+  <br>
+  You have the option to not participate in this study, or to withdraw at any time.
+  <br>
+  <br>
+
+  <b>Will my study-related information be kept confidential?</b>
+  <br>
+  Researchers who may see your information will maintain confidentiality to the extent of the law and university policies. Personal identifiers will not be published or presented in any form.
+  <br>
+  <br>
+
+  <b>Will I be reimbursed for any expenses or paid for my participation in this research?</b>
+  <br>
+  <span id="payment">Yes.</span>
+  <br>
+  <br>
+
+  <b>Can I withdraw or be removed from the study?</b>
+  <br>
+  If you decide to participate, you are free to withdraw your consent and discontinue participation at any time. The researchers also have the right to stop your participation in this study without your consent if they believe it is in your best interests, or you were to object to any future changes that may be made in the study plan.
+  <br>
+  <br>
+
+  <b>Will data collected from me be used for any other research?</b>
+  <br>
+  We will keep the information we collect about you during this research study for study recordkeeping and for potential use in future research projects. Your name and other information that can directly identify you will be stored securely and separately from the rest of the research information we collect from you.
+  <br>
+  De-identified data from this study may be shared with the research community, with journals in which study results are published, and with databases and data repositories used for research. We will remove or code any personal information that could directly identify you before the study data are shared. Despite these measures, we cannot guarantee the anonymity of your personal data.
+  <br>
+  <br>
+
+  <b>Who should I contact if I have any questions?</b>
+  <br>
+  Contact the researchers (A) Sarah Sterman, PI (B) David Zhou, RA at (A) ssterman@illinois.edu (B) david23@illinois.edu if you have any questions about this study or your part in it, or if you have any concerns or complaints about the research.
+  <br>
+  <br>
+
+  <b>Institutional Review Board:</b> If you have any questions about your rights as a research subject, including concerns, complaints, or to offer input, you may call the Office for the Protection of Research Subjects (OPRS) at 217-333-2670 or e-mail OPRS at irb@illinois.edu. If you would like to complete a brief survey to provide OPRS feedback about your experiences as a research participant, please follow the link here or through a link on the OPRS website: https://oprs.research.illinois.edu/. You will have the option to provide feedback or concerns anonymously or you may provide your name and contact information for follow-up purposes.
+  <br>
+
+</div>
+<hr class="invisible">
+<p>
+  If you have any questions, please contact the researchers using the contact information above.
+</p>
+<p>
+  I have read the above information. By pressing Start Session, I agree to participate in the study.
+</p>
+
+  <form method="post">
+    <input type="text" id="device_type" name="device_type" style="display:none;">
+    <input type="text" id="window_width" name="window_width" style="display:none;">
+    <input type="text" id="user_agent" name="user_agent" style="display:none;">
+    <input class="rounded-google-button" type="submit" value="Start Session" style="left: 50%; transform: translate(-50%, 0%);">
+  </form>
+</body>
+<script>
+  device_type = ""
+  function isMobile() {
+    const minWidth = 580;
+    return window.innerWidth < minWidth || screen.width < minWidth;
+  }
+
+  if (isMobile()) {
+    device_type = "mobile"
+  } else {
+    device_type = "desktop"
+  }
+  document.getElementById("device_type").value = device_type;
+  document.getElementById("window_width").value = window.innerWidth;
+  document.getElementById("user_agent").value = window.navigator.userAgent;
+  document.getElementById("payment").innerHTML = "{{payment}}";
+</script>
+{% endblock %}
