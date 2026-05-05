@@ -67,7 +67,7 @@ def logout():
     session.clear()
 
 
-@bp.route('/finish')
+@bp.route('/finish', methods=('GET', 'POST'))
 def finish():
     if not g.user:
         return redirect(url_for('blog.index'))

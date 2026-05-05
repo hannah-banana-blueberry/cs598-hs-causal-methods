@@ -7,4 +7,9 @@
 {% block content %}
 <h3>You finished!</h3>
  Thanks for your participation. Your data has been saved. If you provided your email for the gift card drawing, the researchers will notify you if you've been chosen after the study is completed.
-{% endblock %}
+
+<form method="GET" action="{{ url_for('auth.register') }}">
+  <div class="button-center">
+    <button class="study-button" type="submit">Restart</button>  </div>
+</form>
+ {% endblock %}

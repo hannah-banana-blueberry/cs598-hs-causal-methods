@@ -1,5 +1,5 @@
 import json
-from reading_room.models import Excerpt, db
+from reading_room.db import Excerpt, db
 from reading_room.app import app
 
 def load_excerpts():
