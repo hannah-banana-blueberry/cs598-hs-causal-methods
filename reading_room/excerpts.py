@@ -1,11 +1,45 @@
 excerpt1 = {
-    "title": "Howl's Moving Castle",
-    "author": "Diana Wynne Jones",
-    "text": """In the land of Ingary, where such things as seven-league boots and cloaks of invisibility really exist, it is quite a misfortune to be born the eldest of three. Everyone knows you are the one who will fail first, and worst, if the three of you set out to seek your fortunes.
+    "title": "The Reading Room",
+    "author": "AI-Generated Narrative Stimulus",
+    "text": """Jordan hadn’t planned on ending up in the same study carrel as him again. The library’s dissertation floor was supposed to be neutral territory — silent, fluorescent, mercifully anonymous — but somehow Marcus Chen always claimed the carrel by the east window, the one with the outlet that actually worked, the one Jordan had been using since her second year.
 
-Sophie Hatter was the eldest of three sisters. She was not even the child of a poor woodcutter, which might have given her some chance of success! Her parents were well to do and kept a ladies' hat shop in the prosperous town of Market Chipping. True, her own mother died when Sophie was two years old and her sister Lettie was one year old, and their father married his youngest shop assistant, a pretty blonde girl called Fanny. Fanny shortly gave birth to the third sister, Martha. This ought to have made Sophie and Lettie into Ugly Sisters, but in fact all three girls grew up very pretty indeed, though Lettie was the one everyone said was most beautiful. Fanny treated all three girls with the same kindness and did not favor Martha in the least.
+She set her bag down at the adjacent carrel without looking at him. She had become, over the past two semesters, very good at not looking at him.
 
-Mr. Hatter was proud of his three daughters and sent them all to the best school in town. Sophie was the most studious. She read a great deal, and very soon realized how little chance she had of an interesting future. It was a disappointment to her. She was the eldest of three, and it was quite clear that she would have to stay at home and mind the shop."""
+“You’re in my spot,” he said, not looking up from his laptop.
+
+“There’s no assigned seating in a public library.”
+
+“There’s precedent.”
+
+Jordan opened her laptop. Her reflection looked back at her for a moment before the screen filled with light — forty-two unread emails, a methods chapter that had not moved in three weeks, a calendar reminder that her committee meeting was in eleven days.
+
+She thought about what Dr. Patel had said at their last meeting: The ideas are there, Jordan. The question is whether you trust them.
+
+She hadn’t known what to say to that. She still didn’t.
+
+She was here on a fellowship that assumed she belonged in this program. Most days, she wasn’t sure the fellowship was right.
+
+Across the carrel divider, Marcus’s typing stopped. She felt the absence of it the way you feel a sound only once it’s gone.
+
+“You look like you’re about to fight your own chapter,” he said.
+
+“I’m fine.”
+
+“I didn’t ask if you were fine. I said you look like you’re about to fight your chapter.”
+
+Jordan looked up. He was watching her with an expression she hadn’t yet developed a name for — not unkind, not kind, somewhere in the difficult middle distance between the two.
+
+“Writing group,” he said. “Tomorrow, six o’clock, the seminar room on four. Bring whatever you’re stuck on.”
+
+He looked back at his laptop. “You don’t have to come.”
+
+She looked at her calendar. Six o’clock tomorrow was, technically, free.
+
+She thought about going back to her apartment, opening her laptop alone, watching the cursor blink at her until midnight.
+
+“I’ll think about it,” she said.
+
+It was the closest either of them had come to a truce."""
 }
 
 
